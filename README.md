@@ -34,13 +34,12 @@ y muestra en **tiempo real** lo que se elimina.
 
 ---
 
-## 🖥 Requisitos del sistema
 
-- **Windows 10 / 11**  
-- **Python 3.8+** (solo si compilas desde código)  
-- **Ejecutar como Administrador** para máxima efectividad
-- ⚠️ Recomendado especialmente para PCs con discos mecánicos (HDD), donde liberar espacio puede mejorar notablemente el rendimiento. Para SSD también funciona, pero los beneficios en velocidad son menores.
----
+# 🖥 Requisitos del sistema
+- Windows 10 / 11
+- Python 3.8+ (solo si compilas desde código)
+- Ejecutar como Administrador para máxima efectividad
+- ⚠️**Recomendado especialmente para PCs con discos mecánicos (HDD), donde liberar espacio puede mejorar notablemente el rendimiento. Para SSD también funciona, pero los beneficios en velocidad son menores.**
 
 ## 🚀 Cómo usar (usuario final)
 
@@ -60,9 +59,9 @@ y muestra en **tiempo real** lo que se elimina.
 
 1. **Clona este repositorio:**
 
-   git clone https://github.com/juan27k/AliviarDiscoPython.git
-   cd AliviadorDiscoPython
-(Opcional) Instala dependencias:
+```bash
+git clone https://github.com/juan27k/AliviarDiscoPython.git
+cd AliviadorDiscoPython
 
 
 python -m pip install pyinstaller
