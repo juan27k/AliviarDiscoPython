@@ -72,6 +72,7 @@ Genera el ejecutable:
 pyinstaller --noconsole --onefile --icon=icono.ico AliviarDiscoPython.py
 El .exe se generará en dist/.
 
+```text
 📂 Estructura del proyecto
 AliviadorDeDisco/
 ├── build/              # Carpeta generada por PyInstaller
