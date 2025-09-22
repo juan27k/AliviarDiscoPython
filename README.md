@@ -86,8 +86,8 @@ AliviadorDeDisco/
 ├── AliviarDiscoPython.py    # Código principal
 ├── README.md                # Este archivo
 └── requirements.txt         # (Opcional) dependencias para compilar
+
 📷 Capturas de Pantalla
-(Agrega aquí una o más imágenes de la interfaz en acción para que el usuario vea cómo luce.)
 <img width="480" height="311" alt="image" src="https://github.com/user-attachments/assets/ad32ba59-aaec-4c4b-8f26-92b4990e3dc4" />
 
 📢 Nota Importante
