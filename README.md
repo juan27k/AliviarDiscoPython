@@ -59,38 +59,37 @@ y muestra en **tiempo real** lo que se elimina.
 ## 🛠 Cómo compilar desde el código
 
 1. **Clona este repositorio:**
-   ```bash
+
    git clone https://github.com/juan27k/AliviarDiscoPython.git
    cd AliviadorDiscoPython
 (Opcional) Instala dependencias:
 
-bash
-Copiar código
+
 python -m pip install pyinstaller
 Genera el ejecutable:
 
-bash
-Copiar código
+
 pyinstaller --noconsole --onefile --icon=icono.ico AliviarDiscoPython.py
 El .exe se generará en dist/.
 
 📂 Estructura del proyecto
-bash
-Copiar código
 AliviadorDeDisco/
-│
-├── build/                   # Carpeta generada por PyInstaller
-├── dist/                    # Ejecutable generado (.exe)
+├── build/              # Carpeta generada por PyInstaller
+├── dist/               # Ejecutable generado (.exe)
 │   └── AliviadorDiscoPython.exe
-├── AliviadorLogs/           # Carpeta de logs creada al ejecutar el exe
-├── screenshots/             # Capturas de pantalla del programa
+├── AliviadorLogs/      # Carpeta de logs creada al ejecutar el exe
+├── screenshots/        # Capturas de pantalla del programa
 │   └── interfaz.png
-├── icono.ico                # Icono del programa
-├── AliviarDiscoPython.py    # Código principal
-├── README.md                # Este archivo
-└── requirements.txt         # (Opcional) dependencias para compilar
+├── icono.ico           # Icono del programa
+├── AliviarDiscoPython.py # Código principal
+├── README.md           # Este archivo
+└── requirements.txt    # (Opcional) dependencias para compilar
+
+
 📷 Capturas de Pantalla
-<img width="480" height="311" alt="Interfaz Aliviador de Disco" src="https://github.com/user-attachments/assets/ad32ba59-aaec-4c4b-8f26-92b4990e3dc4" />
+<p align="center">
+  <img src="screenshots/interfaz.png" alt="Interfaz Aliviador de Disco" width="600"/>
+</p>
 📢 Nota Importante
 Esta herramienta no desactiva permanentemente servicios de Windows.
 
