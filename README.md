@@ -1,5 +1,8 @@
 # 🖥 Aliviador de Disco - Windows
 
+🚀 ¿Disco al 100% y Windows lento?  
+Libera espacio en segundos con **Aliviador de Disco**: detiene servicios que consumen recursos, limpia temporales y carpetas de actualización, y te muestra todo en tiempo real. **Gratis, seguro y open source**. ¡Mejorá el rendimiento de tu PC ahora!
+
 ¿Tu disco está constantemente al **100%** y tu PC se vuelve lenta?  
 **Aliviador de Disco** es una herramienta **gratuita y de código abierto** que optimiza tu sistema:  
 detiene temporalmente servicios que generan carga, limpia carpetas de actualizaciones y temporales,  
@@ -7,49 +10,49 @@ y muestra en **tiempo real** lo que se elimina.
 
 ---
 
-## ✨ Características
+## ✨ Características principales
 
-- 🛑 **Detiene temporalmente los servicios:**
+- 🛑 **Detiene temporalmente servicios de Windows que consumen disco:**
   - `BITS` (Servicio de transferencia inteligente en segundo plano)
   - `wuauserv` (Windows Update)
 
-- 🧹 **Borra de forma segura:**
+- 🧹 **Elimina de forma segura archivos que ocupan espacio innecesario:**
   - `C:\Windows\SoftwareDistribution\Download`
   - `%TEMP%` (carpeta temporal del usuario)
 
 - 📊 **Interfaz gráfica amigable:**
   - Ventana con `Listbox/ScrolledText` que muestra en tiempo real cada archivo eliminado.
-  - Botones de **Iniciar** y **Detener** para controlar el proceso.
+  - Botones de **Iniciar** y **Detener** para controlar la limpieza.
 
-- 💾 **Genera logs automáticos:**
-  - Se crean en `AliviadorLogs` dentro de la carpeta donde se ejecuta el `.exe`  
-    (por ejemplo, `dist/AliviadorLogs`) con fecha y hora para futuras revisiones.
+- 💾 **Generación automática de logs:**
+  - Carpeta `AliviadorLogs` dentro de la carpeta del `.exe`  
+    (ejemplo: `dist/AliviadorLogs`) con fecha y hora para seguimiento.
 
-- ✅ **Resumen final:**
+- ✅ **Resumen final de limpieza:**
   - Cantidad de archivos eliminados
   - Espacio total liberado en MB
 
 ---
 
-## 🖥 Requisitos
+## 🖥 Requisitos del sistema
 
-- **Sistema Operativo:** Windows 10 / 11
-- **Python 3.8+** (solo si vas a compilar desde código)
-- Para maximizar la efectividad: **Ejecutar como Administrador**  
-  (necesario para detener servicios y borrar `SoftwareDistribution`)
+- **Windows 10 / 11**  
+- **Python 3.8+** (solo si compilas desde código)  
+- **Ejecutar como Administrador** para máxima efectividad
 
 ---
 
 ## 🚀 Cómo usar (usuario final)
 
-1. **Descarga** el `.exe` desde la sección **Releases** del repo.
-2. Haz **clic derecho** en el ejecutable y selecciona  
-   **"Ejecutar como administrador"** (recomendado).
-3. Presiona **Iniciar** y observa en tiempo real los archivos eliminados.
-4. Si deseas interrumpir la limpieza, presiona **Detener**.
+1. **Descarga** el `.exe` desde la sección **Releases** del repo.  
+2. Haz **clic derecho** en el ejecutable y selecciona **"Ejecutar como administrador"**.  
+3. Presiona **Iniciar** y observa los archivos eliminados en tiempo real.  
+4. Si quieres interrumpir la limpieza, presiona **Detener**.  
 5. Al finalizar:
-   - Verás un **resumen final** en pantalla.
-   - Encontrarás un log detallado en `AliviadorLogs` dentro de la carpeta del `.exe`.
+   - Verás un **resumen final** en pantalla.  
+   - Encontrarás un **log detallado** en `AliviadorLogs`.
+
+> Ideal para solucionar problemas de disco lleno y mejorar el rendimiento de PCs con Windows.
 
 ---
 
@@ -57,8 +60,8 @@ y muestra en **tiempo real** lo que se elimina.
 
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/TU-USUARIO/AliviadorDeDisco.git
-   cd AliviadorDeDisco
+   git clone https://github.com/juan27k/AliviarDiscoPython.git
+   cd AliviadorDiscoPython
 (Opcional) Instala dependencias:
 
 bash
@@ -69,9 +72,9 @@ Genera el ejecutable:
 bash
 Copiar código
 pyinstaller --noconsole --onefile --icon=icono.ico AliviarDiscoPython.py
-El ejecutable se generará en la carpeta dist/.
+El .exe se generará en dist/.
 
-📂 Estructura del Proyecto
+📂 Estructura del proyecto
 bash
 Copiar código
 AliviadorDeDisco/
@@ -86,25 +89,22 @@ AliviadorDeDisco/
 ├── AliviarDiscoPython.py    # Código principal
 ├── README.md                # Este archivo
 └── requirements.txt         # (Opcional) dependencias para compilar
-
 📷 Capturas de Pantalla
-<img width="480" height="311" alt="image" src="https://github.com/user-attachments/assets/ad32ba59-aaec-4c4b-8f26-92b4990e3dc4" />
-
+<img width="480" height="311" alt="Interfaz Aliviador de Disco" src="https://github.com/user-attachments/assets/ad32ba59-aaec-4c4b-8f26-92b4990e3dc4" />
 📢 Nota Importante
 Esta herramienta no desactiva permanentemente servicios de Windows.
-Después de la limpieza, los servicios BITS y wuauserv se reinician automáticamente.
+
+Los servicios BITS y wuauserv se reinician automáticamente después de la limpieza.
 
 Usar bajo tu propia responsabilidad en entornos productivos.
 
 📜 Licencia
 Distribuido bajo la licencia MIT.
-¡Eres libre de usar, modificar y compartir esta herramienta!
+Eres libre de usar, modificar y compartir esta herramienta.
 
 ❤️ Contribuciones
-¿Tienes ideas para mejorar la herramienta?
-Puedes abrir un Issue o enviar un Pull Request.
-¡Toda contribución es bienvenida!
+¿Tenés ideas para mejorar la herramienta?
+Abre un Issue o envía un Pull Request. ¡Toda contribución es bienvenida!
 
 💰 Donaciones
-Si querés apoyar el desarrollo y futuras mejoras, podés hacer donaciones a mi alias:
-juan27k
+Si querés apoyar el desarrollo y futuras mejoras, podés donar a mi alias: juan27k
