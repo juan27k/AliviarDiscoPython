@@ -88,7 +88,8 @@ AliviadorDeDisco/
 
 📷 Capturas de Pantalla
 <p align="center">
-  <img src="screenshots/interfaz.png" alt="Interfaz Aliviador de Disco" width="600"/>
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/63482f87-3b62-4a14-80ee-502f5415382f" />
+
 </p>
 📢 Nota Importante
 Esta herramienta no desactiva permanentemente servicios de Windows.
