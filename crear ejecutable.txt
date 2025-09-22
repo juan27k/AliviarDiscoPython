@@ -1,0 +1,5 @@
+pyinstaller --noconsole --onefile AliviarDiscoPython.py
+
+--con icono
+
+pyinstaller --noconsole --onefile --icon=icono.ico AliviarDiscoPython.py
